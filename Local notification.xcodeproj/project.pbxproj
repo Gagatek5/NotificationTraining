@@ -13,6 +13,15 @@
 		E22F6FB4205D5509000FEBDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22F6FB3205D5509000FEBDA /* Assets.xcassets */; };
 		E22F6FB7205D5509000FEBDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22F6FB5205D5509000FEBDA /* LaunchScreen.storyboard */; };
 		E25349AD205D59800071089F /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25349AC205D59800071089F /* ShadowView.swift */; };
+		E25349AF205D5D660071089F /* UIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25349AE205D5D660071089F /* UIServices.swift */; };
+		E25349B1205D6B310071089F /* AlertServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25349B0205D6B310071089F /* AlertServices.swift */; };
+		E25349B3205D6F340071089F /* CLServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25349B2205D6F340071089F /* CLServices.swift */; };
+		E25349B5205D7C370071089F /* NotificationAttachmentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25349B4205D7C370071089F /* NotificationAttachmentID.swift */; };
+		E25349B9205D7D320071089F /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = E25349B6205D7D320071089F /* DateAlert.png */; };
+		E25349BA205D7D320071089F /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = E25349B7205D7D320071089F /* TimeAlert.png */; };
+		E25349BB205D7D320071089F /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = E25349B8205D7D320071089F /* LocationAlert.png */; };
+		E25349BD205D819B0071089F /* NotificationActionID.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25349BC205D819B0071089F /* NotificationActionID.swift */; };
+		E25349BF205D83260071089F /* NotificationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25349BE205D83260071089F /* NotificationCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		E22F6FB6205D5509000FEBDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E22F6FB8205D5509000FEBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E25349AC205D59800071089F /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		E25349AE205D5D660071089F /* UIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIServices.swift; sourceTree = "<group>"; };
+		E25349B0205D6B310071089F /* AlertServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertServices.swift; sourceTree = "<group>"; };
+		E25349B2205D6F340071089F /* CLServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLServices.swift; sourceTree = "<group>"; };
+		E25349B4205D7C370071089F /* NotificationAttachmentID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAttachmentID.swift; sourceTree = "<group>"; };
+		E25349B6205D7D320071089F /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
+		E25349B7205D7D320071089F /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
+		E25349B8205D7D320071089F /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
+		E25349BC205D819B0071089F /* NotificationActionID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActionID.swift; sourceTree = "<group>"; };
+		E25349BE205D83260071089F /* NotificationCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,10 +58,6 @@
 		E22F6FA0205D5509000FEBDA = {
 			isa = PBXGroup;
 			children = (
-				E22F6FC1205D55D4000FEBDA /* Service */,
-				E22F6FC0205D55A1000FEBDA /* Model */,
-				E22F6FBF205D559F000FEBDA /* View */,
-				E22F6FBE205D559D000FEBDA /* Controller */,
 				E22F6FAB205D5509000FEBDA /* Local notification */,
 				E22F6FAA205D5509000FEBDA /* Products */,
 			);
@@ -61,6 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				E22F6FB8205D5509000FEBDA /* Info.plist */,
+				E22F6FC1205D55D4000FEBDA /* Service */,
+				E22F6FC0205D55A1000FEBDA /* Model */,
+				E22F6FBF205D559F000FEBDA /* View */,
+				E22F6FBE205D559D000FEBDA /* Controller */,
 			);
 			path = "Local notification";
 			sourceTree = "<group>";
@@ -77,10 +95,10 @@
 		E22F6FBF205D559F000FEBDA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E22F6FC2205D563E000FEBDA /* Notification assets */,
 				E22F6FB0205D5509000FEBDA /* Main.storyboard */,
-				E22F6FB3205D5509000FEBDA /* Assets.xcassets */,
 				E22F6FB5205D5509000FEBDA /* LaunchScreen.storyboard */,
+				E22F6FC2205D563E000FEBDA /* Notification assets */,
+				E22F6FB3205D5509000FEBDA /* Assets.xcassets */,
 				E25349AC205D59800071089F /* ShadowView.swift */,
 			);
 			path = View;
@@ -89,6 +107,9 @@
 		E22F6FC0205D55A1000FEBDA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E25349B4205D7C370071089F /* NotificationAttachmentID.swift */,
+				E25349BC205D819B0071089F /* NotificationActionID.swift */,
+				E25349BE205D83260071089F /* NotificationCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +117,9 @@
 		E22F6FC1205D55D4000FEBDA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E25349AE205D5D660071089F /* UIServices.swift */,
+				E25349B0205D6B310071089F /* AlertServices.swift */,
+				E25349B2205D6F340071089F /* CLServices.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -103,6 +127,9 @@
 		E22F6FC2205D563E000FEBDA /* Notification assets */ = {
 			isa = PBXGroup;
 			children = (
+				E25349B6205D7D320071089F /* DateAlert.png */,
+				E25349B8205D7D320071089F /* LocationAlert.png */,
+				E25349B7205D7D320071089F /* TimeAlert.png */,
 			);
 			path = "Notification assets";
 			sourceTree = "<group>";
@@ -168,6 +195,9 @@
 			files = (
 				E22F6FB7205D5509000FEBDA /* LaunchScreen.storyboard in Resources */,
 				E22F6FB4205D5509000FEBDA /* Assets.xcassets in Resources */,
+				E25349BA205D7D320071089F /* TimeAlert.png in Resources */,
+				E25349BB205D7D320071089F /* LocationAlert.png in Resources */,
+				E25349B9205D7D320071089F /* DateAlert.png in Resources */,
 				E22F6FB2205D5509000FEBDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,9 +209,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E25349B5205D7C370071089F /* NotificationAttachmentID.swift in Sources */,
 				E25349AD205D59800071089F /* ShadowView.swift in Sources */,
+				E25349B1205D6B310071089F /* AlertServices.swift in Sources */,
+				E25349AF205D5D660071089F /* UIServices.swift in Sources */,
 				E22F6FAF205D5509000FEBDA /* ViewController.swift in Sources */,
+				E25349B3205D6F340071089F /* CLServices.swift in Sources */,
 				E22F6FAD205D5509000FEBDA /* AppDelegate.swift in Sources */,
+				E25349BD205D819B0071089F /* NotificationActionID.swift in Sources */,
+				E25349BF205D83260071089F /* NotificationCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
